@@ -394,6 +394,7 @@ footer {
   margin: 20px 0;
 }
 .about p {
+  padding: 0 30px;
   margin: 15px 0;
 }
 .about header img {
@@ -414,10 +415,10 @@ footer {
   }
 }
 .about header div span {
-  padding: 0 20px;
+  background-color: blue;
 }
-.about header div span p {
-  padding: 0px;
+.about header div span h2 {
+  padding: 0 30px;
 }
 .about footer {
   margin-top: 50px;
