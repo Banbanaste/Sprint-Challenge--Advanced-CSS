@@ -414,9 +414,6 @@ footer {
     width: 100%;
   }
 }
-.about header div span {
-  background-color: blue;
-}
 .about header div span h2 {
   padding: 0 30px;
 }
