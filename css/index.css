@@ -386,3 +386,44 @@ footer {
     display: none;
   }
 }
+.about {
+  padding-top: 100px;
+  text-align: center;
+}
+.about h2 {
+  margin: 20px 0;
+}
+.about p {
+  margin: 15px 0;
+  padding: 0 20px;
+}
+.about header img {
+  border-radius: 5px;
+}
+.about header div {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .about header div {
+    flex-direction: column;
+  }
+  .about header div p {
+    width: 70%;
+  }
+}
+.about footer {
+  margin-top: 50px;
+}
+@keyframes travel {
+  100% {
+    transform: translate(100vw, -100px);
+  }
+}
+.about .animateImg {
+  width: 200px;
+  top: 200px;
+  left: 0;
+  position: absolute;
+  animation: travel 5s infinite linear;
+}
