@@ -7,12 +7,13 @@
   }
   p {
     margin: 15px 0;
-    padding: 0 20px;
   }
   text-align: center;
   header {
     img {
       border-radius: 5px;
+      max-height: 250px;
+      max-width: 100%;
     }
     div {
       display: flex;
@@ -20,7 +21,13 @@
       @media @mobile {
         flex-direction: column;
         p {
-          width: 70%;
+          width: 100%;
+        }
+      }
+      span {
+        padding: 0 20px;
+        p {
+          padding: 0px;
         }
       }
     }

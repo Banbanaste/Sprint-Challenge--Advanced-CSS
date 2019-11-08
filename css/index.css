@@ -395,10 +395,11 @@ footer {
 }
 .about p {
   margin: 15px 0;
-  padding: 0 20px;
 }
 .about header img {
   border-radius: 5px;
+  max-height: 250px;
+  max-width: 100%;
 }
 .about header div {
   display: flex;
@@ -409,8 +410,14 @@ footer {
     flex-direction: column;
   }
   .about header div p {
-    width: 70%;
+    width: 100%;
   }
+}
+.about header div span {
+  padding: 0 20px;
+}
+.about header div span p {
+  padding: 0px;
 }
 .about footer {
   margin-top: 50px;
