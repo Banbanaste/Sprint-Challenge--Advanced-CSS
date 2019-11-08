@@ -200,6 +200,7 @@ nav div a {
   border-radius: 0px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
   transition: background-color 0.3s, color 0.5s;
 }
 nav div a:hover {
@@ -300,6 +301,7 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
   transition: background-color 0.3s, color 0.5s;
 }
 .home .walk .walk-text .btn:hover {
@@ -327,6 +329,40 @@ footer {
     width: 100%;
     margin: 0px;
   }
+}
+.home .walk .signUpForm {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 300px;
+  background-color: #23293b;
+  transition: 1s ease-in-out;
+}
+.home .walk .signUpForm form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.home .walk .signUpForm form h4 {
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+  color: #fff;
+}
+.home .walk .signUpForm form input {
+  border-radius: 5px;
+  margin: 10px 0;
+  min-width: 50%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5px 0;
+}
+.home .walk .signUpForm form #submitButton:hover {
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .walk {
