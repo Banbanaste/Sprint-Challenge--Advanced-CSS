@@ -1,13 +1,27 @@
 // Navigation code here
 nav {
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: @wild-sand;
+    border-bottom: 2px solid @nav-border;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 100px;
-  background-color: @wild-sand;
   color: @nav-font;
-  border-bottom: 2px solid @nav-border;
   div {
     display: flex;
     justify-content: space-between;
