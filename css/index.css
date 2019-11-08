@@ -203,6 +203,9 @@ footer {
   align-items: center;
   margin-bottom: 20px;
 }
+.home header img {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -290,6 +293,7 @@ footer {
   .home .walk .walk-text .btn {
     display: inline-block;
     width: 100%;
+    padding: 20px 0;
   }
 }
 .home .walk .walk-img {
