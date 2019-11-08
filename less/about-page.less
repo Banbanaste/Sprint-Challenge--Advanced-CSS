@@ -1,0 +1,55 @@
+// Home Content
+
+.about {
+  padding-top: 100px;
+  h2 {
+    margin: 20px 0;
+  }
+  p {
+    padding: 0 30px;
+    margin: 15px 0;
+  }
+  text-align: center;
+  header {
+    img {
+      border-radius: 5px;
+      max-height: 250px;
+      max-width: 100%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      @media @mobile {
+        flex-direction: column;
+        p {
+          width: 100%;
+        }
+      }
+      span {
+        h2 {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+
+  @keyframes travel {
+    0% {
+    }
+    100% {
+      transform: translate(100vw, -100px);
+    }
+  }
+
+  .animateImg {
+    width: 200px;
+    top: 200px;
+    left: 0;
+    position: absolute;
+    animation: travel 5s infinite linear;
+  }
+} // home

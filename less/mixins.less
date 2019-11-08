@@ -1,1 +1,39 @@
 // Mixins Here
+.anchorLinks(@fontSize, @color, @padding: 0px, @backgroundColor: none,@borderRadius: 0px) {
+  font-size: @fontSize;
+  color: @color;
+  padding: @padding;
+  background-color: @backgroundColor;
+  border-radius: @borderRadius;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.5s;
+  &:hover {
+    background-color: @color;
+    color: @backgroundColor;
+  }
+}
+
+.mediaQuery(@width: 100%, @flexDirection: column, @mqSize: @mobile) {
+  @media @mobile {
+    padding: 0px 20px;
+    margin: 0px;
+    width: @width;
+    align-items: center;
+    flex-direction: @flexDirection;
+    img {
+      width: 100%;
+      margin: 20px 0;
+    }
+    .btn {
+      width: @width;
+    }
+    .sky {
+      display: none;
+    }
+    .launch {
+      display: none;
+    }
+  }
+}
